@@ -1,44 +1,56 @@
 * {
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-    max-width: 100%;
-    box-sizing: border-box;
-    overflow-y: scroll;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  max-width: 100%;
+  box-sizing: border-box;
+  overflow-y: scroll;
+}
+body {
+    background-color: blue;
 }
 .firstdiv {
-    background-image: url(./images/used.avif);
-    padding-bottom: 30px;
+  background-image: url(./images/laptopWomanfk.png);
+  background-size: 30%;
+  background-position: -10%;
+  background-repeat: no-repeat;
+  padding-bottom: 30px;
 }
 .apply {
-    float: right;
-    border-bottom:  2px solid rgba(59, 252, 59, 0.616);;
+  float: right;
+  border-bottom: 2px solid rgba(59, 252, 59, 0.616);
 }
 .firstp {
-    font-family: 'Cormorant Garamond', serif;
-    font-family: 'Montserrat', sans-serif;
-    color: white;
-    border-width: 30px;
+  font-family: "Cormorant Garamond", serif;
+  font-family: "Montserrat", sans-serif;
+  border-width: 30px;
 }
 .tailor {
-    border-bottom:  2px solid rgba(59, 252, 59, 0.616);
+  border-bottom: 2px solid rgba(59, 252, 59, 0.616);
 }
 h1 {
-    color: white;
-    padding-bottom: 20px;
-    text-align: center;
+  padding-bottom: 20px;
+  text-align: center;
 }
 .but {
-    background-color: rgba(59, 252, 59, 0.616);
-    text-decoration: none;
-    max-width: 50%;
-    color: white;
-    font-family: 'Cormorant Garamond', serif;
-font-family: 'Montserrat', sans-serif;
-display: flex;
-justify-content: center;
-align-content: center;
-margin-right: auto;
-margin-left: auto;
-padding: 10px 30px;
+  background-color: rgba(59, 252, 59, 0.616);
+  text-decoration: none;
+  max-width: 50%;
+  font-family: "Cormorant Garamond", serif;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 10px 30px;
+}
+@media  screen and(max-width: 500px) {
+  .firstdiv {
+    display: none;
+  }
+  
+  body {
+    background-color: red;
+  }
 }
