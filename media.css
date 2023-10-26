@@ -1,56 +1,96 @@
 * {
-  margin: 0;
   padding: 0;
-  overflow-x: hidden;
+  margin: 0;
   max-width: 100%;
   box-sizing: border-box;
+  overflow-x: hidden;
   overflow-y: scroll;
 }
-body {
-    background-color: blue;
-}
 .firstdiv {
-  background-image: url(./images/laptopWomanfk.png);
-  background-size: 30%;
-  background-position: -10%;
-  background-repeat: no-repeat;
-  padding-bottom: 30px;
-}
-.apply {
-  float: right;
-  border-bottom: 2px solid rgba(59, 252, 59, 0.616);
+  display: inline-flex;
+  margin-top: 10px;
 }
 .firstp {
-  font-family: "Cormorant Garamond", serif;
-  font-family: "Montserrat", sans-serif;
-  border-width: 30px;
+  margin-right: 1110px;
+  margin-left: 20px;
+  border-bottom: 2px solid rgb(61, 14, 61);
 }
-.tailor {
-  border-bottom: 2px solid rgba(59, 252, 59, 0.616);
+.secondp {
+  border-bottom: 2px solid rgb(61, 14, 61);
 }
-h1 {
-  padding-bottom: 20px;
-  text-align: center;
-}
-.but {
-  background-color: rgba(59, 252, 59, 0.616);
-  text-decoration: none;
-  max-width: 50%;
-  font-family: "Cormorant Garamond", serif;
-  font-family: "Montserrat", sans-serif;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  margin-right: auto;
-  margin-left: auto;
-  padding: 10px 30px;
-}
-@media  screen and(max-width: 500px) {
-  .firstdiv {
-    display: none;
-  }
-  
+
+@media only screen and (max-width: 360px) {
   body {
-    background-color: red;
+    
+  }
+  .firstp {
+    margin-right: 69px;
+  }
+  h1 {
+    font-size: 20px;
+    margin-top: 30px;
+    margin-left: 20px;
+    color: rgb(61, 14, 61);
+   display: flex;
+   justify-content: center;
+  }
+  .firstpic {
+    margin-top: 30px;
+    margin-left: 70px;
+    position: relative;
+    animation-name: go;
+    animation-duration: 4s;
+  box-shadow: 6px 6px 6px grey;
+  max-height: 300px;  
+  }
+  @keyframes go {
+   100% {top: 0px;}
+    75% {top: 200px;}
+    50% {top: 400px;}
+    25% {top: 600px;}
+    0% {top: 800px;}
+  }
+  .firstbutton {
+    background-color:  rgb(61, 14, 61);
+    color: white;
+    padding: 10px 40px;
+    margin-left: 90px;
+    margin-top: 20px;
+    box-shadow: 3px 3px 3px grey;
+  }
+  .bulboff {
+    margin-left: 10px;
+    color: white;
+    background-color: rgb(61, 14, 61);
+  }
+  .bulbon {
+    color: white;
+    background-color: rgb(61, 14, 61);
+
+  }
+  .light {
+    margin-left: 10px;
+    margin-right: 20px;
+    margin-top: 15px;
+  }
+  #demo {
+    margin-left: 110px;
+    margin-bottom: 20px;
+    margin-top: 15px;
+  }
+  .know {
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+  }
+  .here {
+    color: white;
+    background-color: rgb(61, 14, 61);
+  }
+  .thanks {
+    color: white;
+    background-color: rgb(61, 14, 61);
+    margin-left: 90px;
+    padding: 10px 40px;
   }
 }
